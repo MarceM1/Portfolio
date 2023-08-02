@@ -73,3 +73,9 @@ article {
 .content p {
 	color: #504d4d;
 }
+
+.content:hover strong {
+	transition: all .3s ease-in-out;
+	text-shadow: 0 0 1px rgba(214, 209, 203, 0.837);
+	color: rgba(196, 192, 188, 0.819);
+}
