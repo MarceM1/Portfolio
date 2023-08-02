@@ -55,6 +55,9 @@ article {
 .contact-button {
 	font-weight: 300;
 }
+.contact-button a {
+	font-family: 'Montserrat', sans-serif;
+}
 .contact-button:hover {
 	transition: all .3s ease-in-out;
 	font-weight: 400;
