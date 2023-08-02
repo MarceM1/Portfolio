@@ -10,13 +10,13 @@ particlesJS({
       },
     },
     color: {
-      value: "#1b1e34",
+      value: "#7166D0",
     },
     shape: {
       type: "circle",
       stroke: {
         width: 0,
-        color: "#000",
+        color: "#7166D0",
       },
       polygon: {
         nb_sides: 6,
@@ -38,13 +38,13 @@ particlesJS({
       },
     },
     size: {
-      value: 8.1,
+      value: 5.1,
       random: true,
       anim: {
         enable: true,
         speed: 5,
-        size_min: 2,
-        sync: false,
+        size_min: .5,
+        sync: true,
       },
     },
     line_linked: {
@@ -84,9 +84,9 @@ particlesJS({
     },
     modes: {
       grab: {
-        distance: 400,
+        distance: 100,
         line_linked: {
-          opacity: 1,
+          opacity:.3,
         },
       },
       bubble: {
