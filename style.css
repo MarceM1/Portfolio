@@ -35,7 +35,7 @@ article {
 	z-index: 3;
 }
 .titles p {
-	color: rgba(98, 95, 95, 0.989);
+	color: rgba(182, 173, 173, 0.989);
 }
 .titles h1:hover{
 	transition: all .3s ease-in-out;
@@ -43,7 +43,7 @@ article {
 	text-shadow: 0 0 5px aliceblue;
 }
 .Nombre {
-	color: rgba(76, 75, 75, 0.787);
+	color: rgba(122, 119, 119, 0.787);
 }
 .Apellido {
 	color: rgba(98, 95, 95, 0.989);
@@ -74,6 +74,9 @@ article {
 	color: #504d4d;
 }
 
+strong {
+	color: rgb(137, 136, 136);
+}
 .content:hover strong {
 	transition: all .3s ease-in-out;
 	text-shadow: 0 0 1px rgba(214, 209, 203, 0.837);
