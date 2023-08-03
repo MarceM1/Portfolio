@@ -25,9 +25,9 @@ div {
 	max-height: 100vh;
 }
 #particles-js {
-  height: 200vh;
+  height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 2;
 }
 
