@@ -1,108 +1,107 @@
 /* Root  Var */
 
 :root {
-  --main-color-solid: rgba(207, 205, 205);
-  --main-color-medium: rgba(207, 205, 205, 0.6);
-  --main-color-light: rgba(207, 205, 205, 0.3);
-  --main-hover-color: rgb(255, 255, 255);
-  --secondary-color: ;
-  --bg-color: rgb(14, 14, 14);
-  --link-color: rgb(220, 217, 213);
+	--main-color-solid: rgba(207, 205, 205);
+	--main-color-medium: rgba(207, 205, 205, 0.6);
+	--main-color-light: rgba(207, 205, 205, 0.3);
+	--main-hover-color: rgb(255, 255, 255);
+	--secondary-color: ;
+	--bg-color: rgb(14, 14, 14);
+	--link-color: rgb(220, 217, 213);
+  
+	--main-font: "Raleway", sans-serif;
+	--secondary-font: "Montserrat", sans-serif;;
+  }
+  
+  /* Resets */
+  
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  html {
+	width: 100vw;
+	min-height: 100vh;
+	font-family: var(--main-font);
+	overflow-x: hidden;
+  }
+  
+  body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--bg-color);
+  }
+  
+  ul,
+  ol,
+  li {
+	list-style: none;
+  }
+  
+  a {
+	text-decoration: none;
+	color: var(--link-color);
+  }
+  
 
-  --main-font: "Raleway", sans-serif;
-  --secondary-font: "Montserrat", sans-serif;;
-}
-
-/* Resets */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  width: 100vw;
-  min-height: 100vh;
-  font-family: var(--main-font);
-  overflow-x: hidden;
-}
-
-body {
-  width: 100%;
-  min-height: 100vh;
-  background-color: var(--bg-color);
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--link-color);
-}
-
-div {
-  max-height: 100vh;
-}
-#particles-js {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 2;
-}
-
-article {
-  z-index: 3;
-}
-.titles p {
-  color: var(--main-color-solid);
-}
-.titles:hover h1 {
-  transition: all 0.5s ease-in-out;
-  color: var(--main-hover-color);
-  text-shadow: 0 0 5px var(--main-hover-color);
-}
-.Nombre {
-  color: var(--main-color-solid);
-}
-.Apellido {
-  color: var(--main-color-solid);
-}
-#main-names h1 {
-  line-height: 2.3rem;
-}
-
-.contact-button {
-  font-weight: 300;
-}
-.contact-button a {
-  font-family: var(--secondary-font);
-}
-.contact-button:hover {
-  transition: all 0.3s ease-in-out;
-  font-weight: 400;
-  text-shadow: 0 0 2px var(--main-hover-color);
-}
-
-.media-icons li:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.3);
-  text-shadow: 0 0 3px var(--main-hover-color);
-}
-
-.content p {
-  color: var(--main-color-light);
-}
-
-strong {
-  color: var(--main-color-medium);
-}
-.content:hover strong {
-  transition: all 0.3s ease-in-out;
-  text-shadow: 0 0 2px var(--main-hover-color);
-  color: var(--main-hover-color);
-}
+  #particles-js {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+  }
+  
+  article {
+	z-index: 3;
+  }
+  .titles p {
+	color: var(--main-color-solid);
+  }
+  .titles:hover h1 {
+	transition: all 0.5s ease-in-out;
+	color: var(--main-hover-color);
+	text-shadow: 0 0 5px var(--main-hover-color);
+  }
+  .Nombre {
+	color: var(--main-color-solid);
+  }
+  .Apellido {
+	color: var(--main-color-solid);
+  }
+  #main-names h1 {
+	line-height: 2.3rem;
+  }
+  
+  .contact-button {
+	font-weight: 300;
+  }
+  .contact-button a {
+	font-family: var(--secondary-font);
+  }
+  .contact-button:hover {
+	transition: all 0.3s ease-in-out;
+	font-weight: 400;
+	text-shadow: 0 0 2px var(--main-hover-color);
+  }
+  
+  .media-icons li:hover {
+	transition: all 0.3s ease-in-out;
+	transform: scale(1.3);
+	text-shadow: 0 0 3px var(--main-hover-color);
+  }
+  
+  .content p {
+	color: var(--main-color-light);
+  }
+  
+  strong {
+	color: var(--main-color-medium);
+  }
+  .content:hover strong {
+	transition: all 0.3s ease-in-out;
+	text-shadow: 0 0 2px var(--main-hover-color);
+	color: var(--main-hover-color);
+  }
+  
