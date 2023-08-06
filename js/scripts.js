@@ -2,15 +2,15 @@ window.sr = ScrollReveal();
 sr.reveal(`#nombre`, {
   duration: 6000,
   origin: `right`,
-  distance: `-1000px`,
+  distance: `-600px`,
 });
 sr.reveal(`#apellido`, {
-  duration: 8000,
+  duration: 6000,
   origin: `right`,
   distance: `-1000px`,
 });
 sr.reveal(`#puesto`, {
-  duration: 7000,
+  duration: 5000,
   origin: `right`,
   distance: `-300px`,
 });
@@ -27,7 +27,7 @@ sr.reveal(`#icons   `, {
 sr.reveal(`#texto1   `, {
   duration: 6000,
   origin: `bottom`,
-  distance: `-200px`,
+  distance: `-100px`,
 });
 sr.reveal(`#texto2   `, {
   duration: 6000,
@@ -37,8 +37,7 @@ sr.reveal(`#texto2   `, {
 sr.reveal(`#texto3   `, {
   duration: 6000,
   origin: `top`,
-  distance: `-200px`,
+  distance: `-150px`,
 });
 
 
-  
