@@ -104,4 +104,14 @@
 	text-shadow: 0 0 2px var(--main-hover-color);
 	color: var(--main-hover-color);
   }
+
+  small {
+	font-family: var(--secondary-font);
+	color: var(--main-color-medium);
+  }
+
+  small strong:hover {
+	transition: all .3s ease-in-out;
+	color: var(--main-hover-color);
+  }
   
