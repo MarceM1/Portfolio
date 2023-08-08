@@ -40,4 +40,9 @@ sr.reveal(`#texto3   `, {
   distance: `-150px`,
 });
 
+sr.reveal(`#copy   `, {
+  duration: 6000,
+  origin: `top`,
+  distance: `-150px`,
+});
 
