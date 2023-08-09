@@ -48,13 +48,6 @@ sr.reveal(`#copy   `, {
 
 
 
-const mainNames = document.querySelector('#main-names');
-
-mainNames.addEventListener('click', () => {
-  ScrollReveal().reveal(mainNames, {
-    beforeReveal: function (el) {
-      el.style.transform = 'translateX(-300%)';}})
-});
 
 
 
