@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Root  Var */
 
 :root {
@@ -18,7 +25,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -60,6 +68,8 @@ article {
   color: var(--main-color-solid);
 }
 #main-names:hover h1 {
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   color: var(--main-hover-color);
   text-shadow: 0 0 5px var(--main-hover-color);
@@ -72,7 +82,11 @@ article {
 }
 #main-names {
 	cursor: pointer;
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	transition: -webkit-transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 	transition: transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 #main-names h1 {
   line-height: 2.3rem;
@@ -85,15 +99,21 @@ article {
   font-family: var(--secondary-font);
 }
 .contact-button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-weight: 400;
   text-shadow: 0 0 2px var(--main-hover-color);
 }
 
 .media-icons li:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  transform: scale(1.3);
-  text-shadow: 0 0 3px var(--main-hover-color);
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  text-shadow: 0 0 1px var(--main-hover-color);
 }
 
 .content p {
@@ -104,6 +124,8 @@ strong {
   color: var(--main-color-medium);
 }
 .content:hover strong {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-shadow: 0 0 2px var(--main-hover-color);
   color: var(--main-hover-color);
@@ -115,10 +137,11 @@ small {
 }
 
 small strong:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: var(--main-hover-color);
 }
-
 
 
 
