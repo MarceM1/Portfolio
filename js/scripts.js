@@ -1,50 +1,38 @@
+
+
 window.sr = ScrollReveal();
-sr.reveal(`#nombre`, {
+sr.reveal(`.toleft`, {
+  duration: 6000,
+  origin: `left`,
+  distance: `-600px`,
+});
+sr.reveal(`.toleftslow`, {
+  duration: 7000,
+  origin: `left`,
+  distance: `-600px`,
+});
+sr.reveal(`.toleftextraslow`, {
+  duration: 8000,
+  origin: `left`,
+  distance: `-600px`,
+});
+sr.reveal(`.toright`, {
   duration: 6000,
   origin: `right`,
   distance: `-600px`,
 });
-sr.reveal(`#apellido`, {
-  duration: 6000,
-  origin: `right`,
-  distance: `-1000px`,
-});
-sr.reveal(`#puesto`, {
-  duration: 5000,
-  origin: `right`,
-  distance: `-300px`,
-});
-sr.reveal(`#contacto`, {
-  duration: 6000,
-  origin: `top`,
-  distance: `-300px`,
-});
-sr.reveal(`#icons   `, {
+sr.reveal(`.torightslow`, {
   duration: 7000,
-  origin: `top`,
-  distance: `-300px`,
+  origin: `right`,
+  distance: `-600px`,
 });
-sr.reveal(`#texto1   `, {
-  duration: 6000,
-  origin: `bottom`,
-  distance: `-100px`,
-});
-sr.reveal(`#texto2   `, {
-  duration: 6000,
-  origin: `left`,
-  distance: `-200px`,
-});
-sr.reveal(`#texto3   `, {
-  duration: 6000,
-  origin: `top`,
-  distance: `-150px`,
+sr.reveal(`.torightextraslow`, {
+  duration: 8000,
+  origin: `right`,
+  distance: `-600px`,
 });
 
-sr.reveal(`#copy   `, {
-  duration: 6000,
-  origin: `top`,
-  distance: `-150px`,
-});
+
 
 
 

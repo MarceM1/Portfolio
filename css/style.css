@@ -26,13 +26,13 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
   width: 100vw;
   min-height: 100vh;
-  font-family: var(--main-font);
+  font-family: var(--secondary-font);
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -54,6 +54,10 @@ a {
   color: var(--link-color);
 }
 
+::-webkit-scrollbar {
+  width: 0.5 rem; /* Ancho de la barra de scroll */
+}
+
 #particles-js {
   height: 100%;
   width: 100%;
@@ -63,6 +67,10 @@ a {
 
 article {
   z-index: 3;
+}
+
+.index__top {
+  z-index: 99;
 }
 .titles p {
   color: var(--main-color-solid);
@@ -81,12 +89,12 @@ article {
   color: var(--main-color-solid);
 }
 #main-names {
-	cursor: pointer;
-	-webkit-transition: -webkit-transform 0.5s ease-in-out;
-	transition: -webkit-transform 0.5s ease-in-out;
-	-o-transition: transform 0.5s ease-in-out;
-	transition: transform 0.5s ease-in-out;
-	transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 #main-names h1 {
   line-height: 2.3rem;
@@ -111,8 +119,8 @@ article {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
   text-shadow: 0 0 1px var(--main-hover-color);
 }
 
@@ -121,7 +129,7 @@ article {
 }
 
 strong {
-  color: var(--main-color-medium);
+  color: var(--main-color-solid);
 }
 .content:hover strong {
   -webkit-transition: all 0.3s ease-in-out;
@@ -143,10 +151,220 @@ small strong:hover {
   color: var(--main-hover-color);
 }
 
+.landing_text {
+  height: 60vh !important;
+  width: fit-content;
+}
 
+.landing_text-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60vh;
+  width: fit-content;
+}
 
+.landing_text-name h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 8rem;
+  line-height: 6.5rem;
+}
 
+.landing_text-name h5 {
+  color: var(--main-color-solid);
+  font-weight: 100;
+  font-size: 5rem;
+  line-height: 5rem;
+  text-align: end;
+}
 
+.landing_text-lastname {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  z-index: 33;
+}
 
+.landing_text-lastname a {
+  z-index: 33;
+  color: var(--main-color-solid);
+  position: absolute;
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-family: var(--main-font);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 5px 0 7px black;
+  border-bottom: thin solid white;
+}
 
+.landing_text-lastname a:hover {
+  text-shadow: 0 0 3px white;
+}
 
+.bio_container {
+  height: 60vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bio_container p {
+  font-weight: 500;
+}
+
+.links {
+  z-index: 33;
+}
+
+.links i {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.shinny:hover {
+  color: white !important;
+  text-shadow: 0 0 3px white;
+}
+
+.excepto:not(.bi:hover):hover {
+  color: inherit !important;
+  text-shadow: 0 0 0 transparent;
+}
+
+.bi-chevron-double-down {
+  animation: blink 2s infinite ease-in-out;
+  cursor: pointer !important;
+  z-index: 33 !important;
+}
+
+.scroll__arrow {
+  position: absolute;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+  z-index: 33 !important;
+  cursor: pointer !important;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#link-proyectos {
+  animation: show 7s ease-in-out; /* Animation name, duration, timing function */
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dispositive__container {
+  height: 15rem;
+}
+
+#computer {
+  font-size: 15rem;
+  line-height: 15rem;
+  transform: translateX(3px);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+#tablet {
+  font-size: 5.5rem;
+  transform: translateX(20px);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+#movil {
+  font-size: 4rem;
+  transform: translateX(40px);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+.dispositive__container:hover #computer {
+  transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg)
+    translateX(-30px) translateY(0px) translateZ(0px);
+}
+
+.dispositive__container:hover #tablet {
+  transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg)
+    translateX(-30px) translateY(0px) translateZ(40px);
+  opacity: 0.6;
+}
+
+.dispositive__container:hover #movil {
+  transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg)
+    translateX(-30px) translateY(0px) translateZ(80px);
+}
+
+.picture__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 3rem;
+}
+
+.picture__container i {
+  position: absolute;
+  cursor: pointer;
+  font-size: 12rem;
+}
+
+#picture-a {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#picture-b {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.picture__container:hover #picture-a {
+  opacity: 1;
+}
+
+.picture__container:hover #picture-b {
+  opacity: 0;
+}
+
+.picture__container:active #picture-a {
+  opacity: 1;
+  transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg)
+    translateX(-30px) translateY(0px) translateZ(0px);
+}
+
+.picture__container:active #picture-b {
+  opacity: 1;
+  transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg)
+    translateX(-30px) translateY(0px) translateZ(40px);
+  color: white;
+  text-shadow: 0 0 3px white;
+}

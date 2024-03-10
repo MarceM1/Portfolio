@@ -27,6 +27,11 @@
     <script>
       ScrollReveal({ reset: false });
     </script>
+    <!-- AnimateCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Marcelo Melogno | Desarrollador Web</title>
@@ -35,115 +40,265 @@
     <!-- Particle Start Instance -->
     <div class="" id="particles-js"></div>
     <!-- Start Main section -->
-    <div class="row my-2 px-2 px-md-5 vh-100">
-      <div class="col-lg-2 "></div>
-      <!-- Start Name section --> 
-      <article
-        class="titles  col-12 col-md-6 col-lg-5  col-xl-7 d-flex flex-column align-items-center align-items-md-end justify-content-center gap-2"
-        id="mi-elemento"
-      >
-        <div
-          class="d-flex flex-column align-items-center align-items-md-end justify-content-center"
-          id="main-names"
-        >
-          <h1 class="Nombre display-6 align-text-bottom m-0" id="nombre">
-            Marcelo
-          </h1>
-          <h1 class="Apellido display-1 align-text-top" id="apellido">
-            Melogno
-          </h1>
-        </div>
-        <div
-          class="d-flex flex-column align-items-center align-items-md-end justify-content-center my-3"
-          id="puesto"
-        >
-          <p class="m-0 text-center">Diseñador</p>
-          <p class="m-0 text-center">Desarrollador</p>
-          <p class="m-0 text-center">Web</p>
-        </div>
-        <a
-          class="contact-button mt-5 mb-2"
-          href="mailto:marcelomelogno1986@gmail.com"
-          target="_blank"
-          id="contacto"
-          ><button class="btn btn-outline-light rounded-pill">
-            Contactame
-          </button></a
-        >
-        <div class="media-icons pt-3" id="icons">
-          <ul class="d-flex align-items-center gap-4 px-1 fs-4">
-            <li>
-              <a
-                class="text-center"
-                href="https://github.com/MarceM1"
-                target="_blank"
+    <main class="container">
+      <section class="landing__text vh-100 mb-5 py-5 d-flex">
+        <div class="landing_text-name p-0 m-0 pt-5">
+          <div>
+            <h5 class="p-0 m-0 toright">Marcelo</h5>
+            <div class="landing_text-lastname">
+              <h2 class="p-0 m-0 toright">MELOGNO</h2>
+              <a href="#proyectos" class="p-0 m-0" id="link-proyectos"
+                >Diseño & Desarrollo Web</a
               >
-                <i class="bi bi-github"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-center"
-                href="https://www.instagram.com/melognomarcelo/?hl=es-la"
-                target="_blank"
-                ><i class="bi bi-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                class="text-center"
-                href="https://www.linkedin.com/in/marcelomelogno/"
-                target="_blank"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="d-flex text-md-end text-center d-none d-md-block" id="copy">
-          <small
-            >&copy;<a href="mailto:marcelomelogno1986@gmail.com"
-              ><strong>Marcelo Melogno</strong></a
-            >. Diseño y Desarrollo Web | Agosto 2023</small
+            </div>
+          </div>
+
+          <div
+            class="links d-flex align-items-center justify-content-end gap-3 pt-5 toright"
           >
+            <a
+              href="https://www.linkedin.com/in/marcelomelogno/"
+              target="_blank"
+              rel="external"
+              referrerpolicy="no-referrer"
+              ><i class="bi bi-linkedin text-secondary fs-4 shinny"></i
+            ></a>
+            <a
+              href="https://github.com/MarceM1"
+              target="_blank"
+              rel="external"
+              referrerpolicy="no-referrer"
+              ><i class="bi bi-github text-secondary fs-4 shinny"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5491135751731&text=Hola%2C%20estoy%20interesad@%20en%20tus%20servicios."
+              target="_blank"
+              rel="external"
+              referrerpolicy="no-referrer"
+              ><i class="bi bi-whatsapp text-secondary fs-4 shinny"></i
+            ></a>
+            <a
+              href="mailto:marcelomelogno1986@gmail.com?subject=Consulta%20de%20servicios"
+              target="_blank"
+              rel="external"
+              referrerpolicy="no-referrer"
+              ><i class="bi bi-envelope-at-fill text-secondary fs-4 shinny"></i
+            ></a>
+          </div>
         </div>
-      </article>
-      <!-- End Name section -->
-      <!-- Start Content section -->
-      <article
-        class="content col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 d-flex flex-column justify-content-center align-items-start px-sm-2 px-lg-1 mt-4"
-      >
-        <p class="" id="texto1">
-          Soy un <strong>desarrollador web full stack</strong> apasionado por el
-          desarrollo de aplicaciones y web sites. Con experiencia en frameworks
-          como <strong>Tailwind</strong> y <strong>Bootstrap</strong>, junto con
-          habilidades en <strong>JavaScript</strong> y el entorno de
-          <strong>Node.js</strong>.
-        </p>
-        <p class="text-md-start text-end" id="texto2">
-          Disfruto creando
-          <strong> experiencias interactivas y visualmente atractivas</strong
-          >.Creo que el <strong>storytelling</strong> es una pieza fundamental
-          para aumentar el valor de la marca y lograr el mayor
-          <strong>engagement</strong> posible con el usuario.
-        </p>
-        <p class="" id="texto3">
-          Mi objetivo es combinar la <strong>funcionalidad</strong> y el
-          <strong>diseño</strong> para ofrecer
-          <strong>soluciones web innovadoras y optimizadas</strong>. Siempre
-          buscando aprender y crecer en este apasionante mundo del desarrollo
-          web.
-        </p>
-      </article>
-      <div class="d-flex text-md-end text-center d-sm-block d-md-none mt-2" id="copy">
-        <small
-          >&copy;<a href="mailto:marcelomelogno1986@gmail.com"
-            ><strong>Marcelo Melogno</strong></a
-          >. Diseño y Desarrollo Web | Agosto 2023</small
+        <div class="bio_container m-0 pt-5 toleft">
+          <p class="text-secondary" id="texto1">
+            Hola! Soy un
+            <strong>desarrollador web full stack</strong> apasionado por el
+            <strong
+              >desarrollo de soluciones digitales dinámicas y
+              atractivas.</strong
+            >
+            Disfruto especialmente el crear
+            <strong> experiencias interactivas y visualmente atrapantes</strong>
+            con el objetivo de <strong>potenciar cada proyecto.</strong>
+          </p>
+
+          <div class="toleft">
+            <p class="text-secondary" id="texto3 toleft">
+              Combinando la <strong>funcionalidad</strong> y el
+              <strong>diseño</strong> para ofrecer
+              <strong>soluciones web innovadoras y optimizadas,</strong> busco
+              una
+              <strong>
+                propuesta completamente personalizada para que cada proyecto sea
+                único.</strong
+              >
+            </p>
+          </div>
+          <p class="text-secondary">
+            Realizo sitios
+            <strong
+              >institucionales, corporativos, ecommerce, sistemas web, para
+              gestión de stock, turnos,</strong
+            >
+            entre otros. <strong>No dudes en contactarme!</strong>
+          </p>
+        </div>
+        <div
+          class="animate__animated animate__bounce scroll__arrow bottom-0 end-0"
         >
-      </div>
-      <!-- End Content section -->
-    </div>
+          <a href="#commercial"
+            ><i class="bi bi-chevron-double-down text-secondary fs-3 shinny"></i
+          ></a>
+        </div>
+      </section>
+      <section class="pt-5 index__top" id="commercial">
+        <article></article>
+        <article class="row d-flex mb-5 index__top">
+          <div class=""></div>
+          <div
+            class="col-5 position-relative d-flex align-items-center justify-content-end px-5 dispositive__container index__top toright"
+          >
+            <i
+              class="bi bi-laptop text-tertiary m-0 p-0 position-absolute shinny"
+              id="computer"
+              ><a href="#proyectos"></a
+            ></i>
+            <i
+              class="bi bi-tablet text-secondary m-0 p-0 position-absolute shinny"
+              id="tablet"
+            ></i>
+            <i
+              class="bi bi-phone text-light m-0 p-0 position-absolute shinny"
+              id="movil"
+            ></i>
+          </div>
+          <div
+            class="col-7 d-flex align-items-start justify-content-around py-4 flex-column index__top toleft"
+          >
+            <h3
+              class="text-secondary m-0 p-0 index__top display-6 border-bottom border-secondary w-100 pb-1"
+            >
+              Responsive Design
+            </h3>
+            <ul class="m-0 p-0 index__top toleft">
+              <li class="fs-5 text-light d-flex gap-2">
+                <i class="bi bi-check-all text-secondary"></i>Adaptable a
+                cualquier dispositivo
+              </li>
+              <li class="fs-5 text-light d-flex gap-2 toleft">
+                <i class="bi bi-person-up text-secondary"></i>Mejora la
+                experiencia del usuario
+              </li>
+              <li class="fs-5 text-light d-flex gap-2 toleftslow">
+                <i class="bi bi-graph-up-arrow text-secondary"></i>Aumenta el
+                SEO
+              </li>
+              <li class="fs-5 text-light d-flex gap-2 toleftextraslow">
+                <i class="bi bi-piggy-bank text-secondary"></i>Reduce costos y
+                tiempo de desarrollo
+              </li>
+            </ul>
+          </div>
+        </article>
+        <div class="row d-flex pt-5 mb-5 index__top">
+          <article
+            class="col-7 d-flex align-items-start justify-content-around gap-2 py-4 flex-column index__top toright"
+          >
+            <h3
+              class="text-secondary m-0 p-0 index__top display-6 border-bottom border-secondary w-100 pb-1 text-end"
+            >
+              Custom Design
+            </h3>
+            <ul class="m-0 p-0 index__top toright w-100">
+              <li class="fs-5 text-light d-flex gap-2 justify-content-end">
+                Imagen única y memorable
+                <i class="bi bi-award text-secondary"></i>
+              </li>
+              <li
+                class="fs-5 text-light d-flex gap-2 toright d-flex gap-2 justify-content-end"
+              >
+                Aumenta el engagement y la fidelización
+                <i class="bi bi-people text-secondary"></i>
+              </li>
+              <li
+                class="fs-5 text-light d-flex gap-2 torightslow d-flex gap-2 justify-content-end"
+              >
+                Experiencia de usuario optimizada
+                <i class="bi bi-person-gear text-secondary"></i>
+              </li>
+              <li
+                class="fs-5 text-light d-flex gap-2 torightextraslow d-flex gap-2 justify-content-end"
+              >
+                Mejora las conversiones
+                <i class="bi bi-bar-chart text-secondary"></i>
+              </li>
+            </ul>
+          </article>
+          <div class="col-5 picture__container index__top excepto toleft">
+            <i class="bi bi-image text-tertiary excepto" id="picture-a"></i>
+            <i
+              class="bi bi-image-fill text-tertiary excepto"
+              id="picture-b"
+            ></i>
+          </div>
+        </div>
+        <article class="row d-flex pt-5 mb-5 index__top">
+          <div
+            class="col-5 position-relative d-flex align-items-center justify-content-end index__top toright"
+          ></div>
+          <div
+            class="col-7 d-flex align-items-start justify-content-around py-4 flex-column index__top toleft"
+          >
+            <h3
+              class="text-secondary m-0 p-0 index__top display-6 border-bottom border-secondary w-100 pb-1"
+            >
+              Customer Focus
+            </h3>
+            <ul class="m-0 p-0 index__top toleft">
+              <li class="fs-5 text-light d-flex gap-2">
+                <i class="bi bi-check-all text-secondary"></i>Adaptable a
+                cualquier dispositivo
+              </li>
+              <li class="fs-5 text-light d-flex gap-2 toleft">
+                <i class="bi bi-person-up text-secondary"></i>Mejora la
+                experiencia del usuario
+              </li>
+              <li class="fs-5 text-light d-flex gap-2 toleftslow">
+                <i class="bi bi-graph-up-arrow text-secondary"></i>Aumenta el
+                SEO
+              </li>
+              <li class="fs-5 text-light d-flex gap-2 toleftextraslow">
+                <i class="bi bi-piggy-bank text-secondary"></i>Reduce costos y
+                tiempo de desarrollo
+              </li>
+            </ul>
+          </div>
+        </article>
+        <div class="row d-flex pt-5 index__top">
+          <article
+            class="col-7 d-flex align-items-start justify-content-around gap-2 py-4 flex-column index__top toright"
+          >
+            <h3
+              class="text-secondary m-0 p-0 index__top display-6 border-bottom border-secondary w-100 pb-1 text-end"
+            >
+              Transparency and trust
+            </h3>
+            <ul class="m-0 p-0 index__top toright w-100">
+              <li class="fs-5 text-light d-flex gap-2 justify-content-end">
+                Imagen única y memorable
+                <i class="bi bi-award text-secondary"></i>
+              </li>
+              <li
+                class="fs-5 text-light d-flex gap-2 toright d-flex gap-2 justify-content-end"
+              >
+                Aumenta el engagement y la fidelización
+                <i class="bi bi-people text-secondary"></i>
+              </li>
+              <li
+                class="fs-5 text-light d-flex gap-2 torightslow d-flex gap-2 justify-content-end"
+              >
+                Experiencia de usuario optimizada
+                <i class="bi bi-person-gear text-secondary"></i>
+              </li>
+              <li
+                class="fs-5 text-light d-flex gap-2 torightextraslow d-flex gap-2 justify-content-end"
+              >
+                Mejora las conversiones
+                <i class="bi bi-bar-chart text-secondary"></i>
+              </li>
+            </ul>
+          </article>
+          <div class="col-5 index__top excepto"></div>
+        </div>
+      </section>
+      <section class="vh-100" id="proyectos">
+        <h2 class="display text-light">Proyectos</h2>
+      </section>
+      <section class="vh-100" id="skills">
+        <h2 class="display text-light">Skills</h2>
+      </section>
+    </main>
     <!-- End Main section -->
+    <footer>
+      <h2 class="display text-light">footer</h2>
+    </footer>
     <!-- Particle Script -->
     <script src="./js/particles.min.js"></script>
     <!-- ScrollReveal JS -->
@@ -156,5 +311,6 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
