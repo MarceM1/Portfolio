@@ -42,6 +42,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: var(--bg-color);
+  overflow-x: hidden;
 }
 
 ul,
@@ -81,10 +82,11 @@ strong {
 
 /* Class */
 .bio_container {
-  height: 60vh;
-  padding: 2rem;
+  height: 60vh !important;
+  padding-left: 1.5rem !important;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   cursor: default;
 }
@@ -144,8 +146,8 @@ strong {
 }
 
 .landing_text {
-  height: 60vh !important;
-  width: fit-content;
+  
+  height: 60vh;
 }
 
 .landing_text-name {
@@ -153,7 +155,7 @@ strong {
   flex-direction: column;
   justify-content: space-between;
   height: 60vh;
-  width: fit-content;
+  
 }
 
 .landing_text-name h2 {
