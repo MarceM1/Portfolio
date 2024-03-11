@@ -23,7 +23,10 @@
 
 /* Resets */
 
-* {
+*,
+**,
+::after,
+::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -91,7 +94,7 @@ strong {
   cursor: default;
 }
 
-.bi-chevron-double-down {
+.blink {
   animation: blink 2s infinite ease-in-out;
   cursor: pointer !important;
   z-index: 33 !important;
@@ -105,14 +108,14 @@ strong {
   border-bottom: 1px solid #7166d08a;
 }
 
-.bio__span{
+.bio__span {
   color: var(--atencion-color);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
   font-weight: 800;
 }
 
-.bio__span:hover{
+.bio__span:hover {
   text-shadow: 0 0 3px var(--atencion-color);
 }
 
@@ -146,7 +149,6 @@ strong {
 }
 
 .landing_text {
-  
   height: 60vh;
 }
 
@@ -155,7 +157,6 @@ strong {
   flex-direction: column;
   justify-content: space-between;
   height: 60vh;
-  
 }
 
 .landing_text-name h2 {
@@ -260,10 +261,11 @@ strong {
   text-shadow: 0 0 3px white;
 }
 
-.glide__slide img{
-  box-shadow: rgba(252, 251, 251, 0.1) 0px 10px 15px -3px, rgba(255, 254, 254, 0.05) 0px 4px 6px -2px;
+.glide__slide img {
+  box-shadow: rgba(252, 251, 251, 0.1) 0px 10px 15px -3px,
+    rgba(255, 254, 254, 0.05) 0px 4px 6px -2px;
 }
-.slide-button{
+.slide-button {
   border: none;
   background: #7166d03b;
 }
@@ -368,10 +370,9 @@ strong {
   transform-style: preserve-3d;
 }
 
-#proyectos__layout-icon{
+#proyectos__layout-icon {
   height: 25rem;
   transition: all 0.5s ease-in-out;
-  
 }
 
 #grid-icon {
@@ -379,23 +380,17 @@ strong {
   line-height: 25rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  
- 
 }
 
-#carrousel{
+#carrousel {
   transition: all 0.5s ease-in-out;
   cursor: pointer;
-  
-  
 }
 
-#proyectos__layout-icon:hover i{
+#proyectos__layout-icon:hover i {
   color: white !important;
   text-shadow: 0 0 3px white;
 }
-
-
 
 #tablet {
   font-size: 5.5rem;
