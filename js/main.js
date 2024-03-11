@@ -111,5 +111,48 @@ particlesJS({
   retina_detect: true,
 });
 
+new Glide('.glide', {
+  type: 'carousel',
+  startAt: 0,
+  perView: 1,
+  gap: 30,
+  breackpoints: {
+      991: {
+          perViev:2
+      },
+      768: {
+          perViev:1
+      }
+  }
+}).mount();
+
+
+
+
+let hasClicked = false;
+
+function changeOpacity() {
+  const gridIcon = document.getElementById('grid-icon');
+  const carrousel = document.getElementById('carrousel');
+
+  if (!gridIcon || !carrousel) {
+    console.error("Elementos #grid-icon o #carrousel no encontrados.");
+    return; 
+  }
+
+  
+  if (hasClicked) return;
+
+  hasClicked = true;
+
+  if(gridIcon.classList.contains('opacity-100')){
+    gridIcon.classList.toggle('opacity-0');
+    // gridIcon.classList.add('d-none');
+    carrousel.classList.toggle('opacity-100');
+  }
+
+  gridIcon.style.display = gridIcon.classList.contains('opacity-0') ? 'none' : 'block';
+}
+
 
 

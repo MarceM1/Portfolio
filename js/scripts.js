@@ -1,6 +1,10 @@
 
 
 window.sr = ScrollReveal();
+sr.reveal('.show',{
+  duration: 8000,
+  
+})
 sr.reveal(`.toleft`, {
   duration: 6000,
   origin: `left`,
