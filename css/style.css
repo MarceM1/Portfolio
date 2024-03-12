@@ -74,6 +74,11 @@ a {
 footer {
   z-index: 33;
 }
+
+header{
+  height: 100vh;
+}
+
 small {
   font-family: var(--secondary-font);
   color: var(--main-color-medium);
@@ -153,9 +158,9 @@ strong {
   z-index: 999 !important;
 }
 
-.landing_text {
+/* .landing_text {
   height: fit-content;
-}
+} */
 
 .landing_text-name {
   display: flex;
@@ -463,6 +468,90 @@ strong {
   }
 }
 
+/* MediaQuerys */
+
+@media (max-width: 767px ) and (min-width:426px) {
+  
+  header{
+    height: fit-content;
+  }
+
+  .landing_text-name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing_text-name h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4.6rem;
+    line-height: 4.6rem;
+  }
+
+  .landing_text-name h5 {
+    color: var(--main-color-solid);
+    font-weight: 100;
+    font-size: 2.5rem;
+    line-height: 2rem;
+   
+    text-align: center;
+  }
+
+  .landing_text-lastname a {
+    z-index: 33;
+    color: var(--main-color-solid);
+    position: absolute;
+    font-weight: 400;
+    font-size:  1.6rem;
+    font-family: var(--main-font);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 5px 0 7px black;
+  }
+}
+
+@media (max-width: 425px) {
+  
+  header{
+    height: fit-content;
+  }
+
+  .landing_text-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .landing_text-name h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.7rem;
+    line-height: 3.7rem;
+  }
+
+  .landing_text-name h5 {
+    color: var(--main-color-solid);
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    text-align: center;
+  }
+
+  .landing_text-lastname a {
+    z-index: 33;
+    color: var(--main-color-solid);
+    position: absolute;
+    font-weight: 400;
+    font-size:  1.3rem;
+    font-family: var(--main-font);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 5px 0 7px black;
+  }
+}
+
+
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {
@@ -514,7 +603,7 @@ strong {
   grid-row: span 2;
 }
 
-.grid-wrapper >.big {
+.grid-wrapper > .big {
   grid-column: span 2;
   grid-row: span 2;
 }
