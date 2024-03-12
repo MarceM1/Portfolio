@@ -90,12 +90,12 @@ strong {
 }
 
 .bio_container {
-  height: 60vh !important;
+  height: fit-content;
   padding-left: 1.5rem !important;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   cursor: default;
 }
 
@@ -154,14 +154,14 @@ strong {
 }
 
 .landing_text {
-  height: 60vh;
+  height: fit-content;
 }
 
 .landing_text-name {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 60vh;
+  height: 100%;
 }
 
 .landing_text-name h2 {
