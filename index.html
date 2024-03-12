@@ -27,19 +27,12 @@
     <script>
       ScrollReveal({ reset: false });
     </script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- AnimateCSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- GlideJs -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -53,7 +46,9 @@
     <header class="container vh-100 d-flex flex-column justify-content-center">
       <section class="row m-0 p-0 landing__text d-flex align-items-center">
         <!-- Hero Text -->
-        <div class="col-12 col-lg-7 landing_text-name p-0 m-0 d-flex flex-column justify-content-between">
+        <div
+          class="col-12 col-lg-7 landing_text-name p-0 m-0 d-flex flex-column justify-content-between"
+        >
           <div class="">
             <h5 class="p-0 m-0 toright">Marcelo</h5>
             <div class="landing_text-lastname">
@@ -102,7 +97,7 @@
         </div>
 
         <!-- Bio -->
-        <div class="col-12 col-lg-5  bio_container m-0 p-0 toleft index__top">
+        <div class="col-12 col-lg-5 bio_container m-0 p-0 toleft index__top">
           <p class="text-secondary m-0 p-0" id="texto1">
             Hola! Soy un
             <strong>desarrollador web full stack</strong> apasionado por el
@@ -142,9 +137,13 @@
         </div>
       </section>
       <!-- Scroll Icon -->
-      <div class="row m-0 p-0 mt-2 animate__animated animate__bounce scroll__arrow">
+      <div
+        class="row m-0 p-0 mt-2 animate__animated animate__bounce scroll__arrow"
+      >
         <a href="#commercial" class="text-end"
-          ><i class="bi bi-arrow-down-circle-fill text-secondary fs-3 fw-bolder shinny blink"></i
+          ><i
+            class="bi bi-arrow-down-circle-fill text-secondary fs-3 fw-bolder shinny blink"
+          ></i
         ></a>
       </div>
     </header>
@@ -152,7 +151,6 @@
     <!-- Start Main section -->
     <main class="container">
       <!-- Landing Section -->
-      
 
       <!-- Product Facts Section-->
       <section class="mb-5 py-5 index__top" id="commercial">
@@ -269,7 +267,7 @@
         <article class="row d-flex pt-5 mb-5 index__top">
           <!-- Image -->
           <div
-            class="col-12 col-lg-5 position-relative d-flex align-items-center justify-content-end index__top toright px-5"
+            class="col-12 col-lg-5 position-relative d-flex align-items-center justify-content-end index__top toright px-5 order-2 order-lg-1"
             id="focus__container"
           >
             <a href="#testimonials" class="text-tertiary"
@@ -284,7 +282,7 @@
           </div>
           <!-- Content -->
           <div
-            class="col-12 col-lg-7 d-flex align-items-start justify-content-around py-4 flex-column index__top toleft"
+            class="col-12 col-lg-7 d-flex align-items-start justify-content-around py-4 flex-column index__top toleft order-1 order-lg-2"
           >
             <!-- Title -->
             <h3
@@ -295,7 +293,8 @@
             <!-- Items -->
             <ul class="m-0 p-0 index__top toleft">
               <li class="fs-5 text-light d-flex gap-2">
-                <i class="bi bi-arrow-repeat text-secondary"></i>Retroalimentación constante
+                <i class="bi bi-arrow-repeat text-secondary"></i
+                >Retroalimentación constante
               </li>
               <li class="fs-5 text-light d-flex gap-2 toleft">
                 <i class="bi bi-grid-1x2 text-secondary"></i>Soluciones
@@ -372,12 +371,14 @@
           </h3>
         </article>
         <!-- Layout -->
-        <article class="row m-0 p-0 pb-5 d-flex align-items-center index__top">
+        <article
+          class="row m-0 p-0 pb-5 d-flex align-items-center index__top position-relative"
+        >
           <!-- Content -->
           <div
-            class="col-5 d-flex flex-column justify-content-around m-0 p-0 index__top"
+            class="row d-flex align-items-start justify-content-around m-0 p-0 index__top"
           >
-            <div>
+            <div class="col-6 px-4">
               <h4 class="display-6 text-secondary border__bottom border-1 pb-2">
                 Mejora tu huella digital
               </h4>
@@ -391,7 +392,7 @@
                 >
               </p>
             </div>
-            <div>
+            <div class="col-6 px-4">
               <h4 class="display-6 text-secondary border__bottom border-1 pb-2">
                 Sin límites a tus proyectos
               </h4>
@@ -406,74 +407,181 @@
                   micrositios para eventos, profesionales, etc.</strong
                 >
               </p>
-              <a href="mailto:marcelomelogno@gmail.com" class="fs-5"
-                ><span class="bio__span">Tu imaginación es el limite.</span></a
+              <a
+                href="mailto:marcelomelogno@gmail.com"
+                class="fs-5 d-flex justify-content-end"
+                ><span class="bio__span border__bottom pb-2"
+                  >Tu imaginación es el limite.</span
+                ></a
               >
             </div>
           </div>
           <!-- Grid - Carrousel -->
-          <div
-            class="col-7 d-flex align-items-center justify-content-around m-0 p-0 position-relative index__top"
-            id="proyectos__layout-icon"
-          >
-            <i
-              class="bi bi-layout-wtf text-secondary opacity-100 index__topgit"
-              id="grid-icon"
-              onclick="changeOpacity()"
-            ></i>
-            <div class="glide position-absolute opacity-0 px-5" id="carrousel">
-              <div class="glide__track" data-glide-el="track">
-                <ul
-                  class="glide__slides d-flex align-items-center justify-content-center rounded"
-                >
-                  <li
-                    class="glide__slide text-light d-flex align-items-center justify-content-center"
-                    onclick="changeOpacity()"
+          <article class="d-flex flex-column gap-3 pt-5">
+            <h4 class="display-6  pb-2 text-secondary">
+              Algunos proyectos realizados
+            </h4>
+
+            <div class="row m-0 p-0 pt-5 ">
+              <div class="col-12">
+                <div class="grid-wrapper">
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                    class="big"
                   >
-                    <img
-                      src="ASSETS/img/POS_indexProductos.jpg"
-                      alt=""
-                      class="img-fluid rounded"
-                    />
-                  </li>
-                  <li
-                    class="glide__slide text-light d-flex align-items-center justify-content-center"
-                    onclick="changeOpacity()"
+                    <img src="ASSETS/img/POS_modalDetalleProducto.jpg" alt="">
+                  </div>
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="150"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                    class="wide"
                   >
-                    <img
-                      src="ASSETS/img/POS_modalDetalleProducto.jpg"
-                      alt=""
-                      class="img-fluid rounded"
-                    />
-                  </li>
-                  <li
-                    class="glide__slide text-light d-flex align-items-center justify-content-center"
-                    onclick="changeOpacity()"
+                    
+                  </div>
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
                   >
-                    <img
-                      src="ASSETS/img/POS_modalRestaurar.jpg"
-                      alt=""
-                      class="img-fluid rounded"
-                    />
-                  </li>
-                </ul>
-              </div>
-              <div class="glide__arrows" data-glide-el="controls">
-                <button
-                  class="glide__arrow glide__arrow--left slide-button"
-                  data-glide-dir="<"
-                >
-                  <i class="bi-chevron-left fs-6"></i>
-                </button>
-                <button
-                  class="glide__arrow glide__arrow--right slide-button"
-                  data-glide-dir=">"
-                >
-                  <i class="bi-chevron-right fs-6"></i>
-                </button>
+                    <img src="ASSETS/img/POS_modalDetalleProducto.jpg" alt="">
+                  </div>
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="1000"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                    class="tall"
+                  >
+                    <img src="ASSETS/img/POS_modalDetalleProducto.jpg" alt="">
+                  </div>
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                  >
+                    <img src="ASSETS/img/POS_modalRestaurar.jpg" alt="">
+                  </div>
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                  >
+                    <img src="ASSETS/img/satelite.png" alt="">
+                  </div>
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="100"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                    class=""
+                  >
+                    <img src="ASSETS/img/POS_modalDetalleProducto.jpg" alt="">
+                  </div>
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                  >
+                    <img src="ASSETS/img/POS_modalDetalleProducto.jpg" alt="">
+                  </div>
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="350"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                  >
+                    <img src="ASSETS/img/POS_modalDetalleProducto.jpg" alt="">
+                  </div>
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="100"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                  >
+                    <img src="ASSETS/img/POS_modalDetalleProducto.jpg" alt="">
+                  </div>
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                  >
+                    <img src="ASSETS/img/POS_modalDetalleProducto.jpg" alt="">
+                  </div>
+                  <div
+                    data-aos="flip-down"
+                    data-aos-offset="0"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                  >
+                    <img src="ASSETS/img/POS_modalDetalleProducto.jpg" alt="">
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+
+            <!-- <i
+              class="bi bi-layout-wtf text-tertiary opacity-50  position-absolute top-0 text-center d-none"
+              id="grid-icon"
+            ></i> -->
+          </article>
         </article>
       </section>
 
@@ -530,8 +638,8 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <!-- GlideJs -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- MainScripts -->
     <script src="./js/main.js"></script>
   </body>
