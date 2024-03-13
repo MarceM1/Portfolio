@@ -75,7 +75,7 @@ footer {
   z-index: 33;
 }
 
-header{
+header {
   height: 100vh;
 }
 
@@ -474,9 +474,8 @@ strong {
 
 /* MediaQuerys */
 
-@media (max-width: 767px ) and (min-width:426px) {
-  
-  header{
+@media (max-width: 767px) and (min-width: 426px) {
+  header {
     height: fit-content;
   }
 
@@ -497,7 +496,7 @@ strong {
     font-weight: 100;
     font-size: 2.5rem;
     line-height: 2rem;
-   
+
     text-align: center;
   }
 
@@ -506,7 +505,7 @@ strong {
     color: var(--main-color-solid);
     position: absolute;
     font-weight: 400;
-    font-size:  1.6rem;
+    font-size: 1.6rem;
     font-family: var(--main-font);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -515,8 +514,7 @@ strong {
 }
 
 @media (max-width: 425px) {
-  
-  header{
+  header {
     height: fit-content;
   }
 
@@ -546,15 +544,13 @@ strong {
     color: var(--main-color-solid);
     position: absolute;
     font-weight: 400;
-    font-size:  1.3rem;
+    font-size: 1.3rem;
     font-family: var(--main-font);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     text-shadow: 5px 0 7px black;
   }
 }
-
-
 
 /* Scrollbar */
 
@@ -610,4 +606,12 @@ strong {
 .grid-wrapper > .big {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.devices__wrapper {
+  width: max-content;
+}
+
+.device__container > div > img {
+  filter: drop-shadow(-5px 5px 3px #7166d027);
 }
