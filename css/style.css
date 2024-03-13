@@ -610,8 +610,24 @@ strong {
 
 .devices__wrapper {
   width: max-content;
+  cursor: pointer;
 }
 
 .device__container > div > img {
   filter: drop-shadow(-5px 5px 3px #7166d027);
+}
+
+.devices__wrapper .device__container {
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.devices__wrapper:hover .device__container:nth-child(1){
+  transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg)
+    translateX(-30px) translateY(0px) translateZ(0px);
+}
+
+.devices__wrapper:hover .device__container:nth-child(2){
+  transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg)
+    translateX(-30px) translateY(0px) translateZ(40px);
 }
