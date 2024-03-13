@@ -224,7 +224,11 @@ strong {
   justify-content: start;
   padding-left: 3rem;
 }
-.picture__container i {
+.picture__container i:nth-child(1) {
+  cursor: pointer;
+  font-size: 12rem;
+}
+.picture__container i:nth-child(2) {
   position: absolute;
   cursor: pointer;
   font-size: 12rem;
