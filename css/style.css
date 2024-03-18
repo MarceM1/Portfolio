@@ -603,3 +603,11 @@ strong {
     rgba(238, 238, 238, 0) 100%
   );
 } */
+
+
+
+.project-link:hover i{
+  transition: all .3s ease-in-out;
+  color: white !important;
+  text-shadow: 0 0 3px white;
+}
