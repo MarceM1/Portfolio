@@ -45,6 +45,7 @@
     <!-- Start Header -->
     <header
       class="container row m-0 p-0 d-flex flex-column justify-content-start justify-content-md-center"
+      id="inicio"
     >
       <section class="row m-0 p-0 landing__text d-flex align-items-center">
         <!-- Hero Text -->
@@ -129,8 +130,8 @@
             Realizo sitios
             <strong
               >institucionales, corporativos, ecommerce, sistemas web,
-              paragestión de stock, turnos,</strong
-            >
+              padministracion, turnos, reservas, landigpages, eventos,
+            </strong>
             entre otros.
             <a
               href="mailto:marcelomelogno1986@gmail.com?subject=Consulta%20de%20servicios"
@@ -144,11 +145,11 @@
       <div
         class="row m-0 p-0 px-2 pb-5 px-md-0 pb-md-0 animate__animated animate__bounce scroll__arrow"
       >
-        <a href="#commercial" class="text-end"
-          ><i
+        <a href="#commercial" class="text-end">
+          <i
             class="bi bi-arrow-down-circle-fill text-secondary fs-3 fw-bolder shinny blink"
-          ></i
-        ></a>
+          ></i>
+        </a>
       </div>
     </header>
     <!-- Start Main section -->
@@ -550,18 +551,30 @@
                     </ul>
                   </div>
                   <div
-                    class="row m-0 p-0 mt-2 mt-lg-0 align-items-center toleftextraslow"
+                    class="row d-flex m-0 p-0 mt-2 mt-lg-0 align-items-center toleftextraslow"
                   >
+                    <!-- button mobile -->
                     <button
-                      class="col-12 col-lg-3 btn btn-outline-secondary rounded-pill"
+                      class="col-12 col-lg-3 btn btn-outline-secondary rounded-pill d-block d-lg-none"
                     >
                       Ver más
                     </button>
+                    <!-- button desktop -->
+                    <div class="button__wrapper index__top d-none d-lg-block">
+                      <div class="button__container index__top">
+                        <a
+                          class="button__border d-flex align-items-center justify-content-center"
+                        >
+                          <i class="bi bi-chevron-compact-right"></i>
+                        </a>
+                        <p class="m-0 p-0">Ver más</p>
+                      </div>
+                    </div>
                     <a
                       href="https://commercialkitchenfloor.com/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="col-12 col-lg-9 d-flex align-items-center gap-2 toleftextraslow text-secondary fs-5 toleft project-link"
+                      class="col-8 d-flex align-items-center gap-2 toleftextraslow text-secondary fs-5 toleft project-link"
                     >
                       <i class="bi bi-link text-secondary fs-1"></i>
                       Visita este sitio
@@ -788,13 +801,17 @@
                 >
                   <div>
                     <h3 class="toright text-secondary">
-                      Micro website para 
-                      <strong>bodas, eventos corporativos, académicos, sociales, etc.</strong>
+                      Micro website para
+                      <strong
+                        >bodas, eventos corporativos, académicos, sociales,
+                        etc.</strong
+                      >
                     </h3>
                     <p class="text-secondary torightslow m-0 p-0">
-                      Sitios de rapido desarrollo 
+                      Sitios de rapido desarrollo
                       <strong>
-                        ideales para todo tipo de eventos, lanzamientos de productos o marcas, bodas, landigpages.</strong
+                        ideales para todo tipo de eventos, lanzamientos de
+                        productos o marcas, bodas, landigpages.</strong
                       >
                     </p>
                   </div>
@@ -934,12 +951,15 @@
                 >
                   <div>
                     <h3 class="toleft text-secondary">
-                      Sistema web para 
+                      Sistema web para
                       <strong>administración de stock</strong>
                     </h3>
                     <p class="text-secondary m-0 p-0 toleftslow">
-                      Solucion web para administracion de stock  
-                      <strong>ideal para tiendas minoristas, depósitos, alquiler de bienes, etc.</strong>
+                      Solucion web para administracion de stock
+                      <strong
+                        >ideal para tiendas minoristas, depósitos, alquiler de
+                        bienes, etc.</strong
+                      >
                     </p>
                   </div>
                   <div class="toleft">
@@ -965,7 +985,9 @@
                       <li
                         class="d-flex align-items-center gap-2 text-light m-0 p-0 toleftextraslow"
                       >
-                        <i class="bi bi-shop-window body-text fs-6 text-secondary"></i>
+                        <i
+                          class="bi bi-shop-window body-text fs-6 text-secondary"
+                        ></i>
                         Gestión de e-shop
                       </li>
                     </ul>
@@ -990,7 +1012,6 @@
                   </div>
                 </div>
               </article>
-
             </div>
           </article>
         </article>
@@ -1017,8 +1038,98 @@
     <!-- End Main section -->
 
     <!-- Start Footer section -->
-    <footer class="index__top">
-      <article class="row d-flex pb-2 index__top">
+    <footer class="index__top index__top">
+      <!-- Content -->
+      <article class="row m-0 p-0 my-5">
+        <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
+          <img
+            src="ASSETS/img/perfil_pick.jpg"
+            alt="Imagen de perfil"
+            class="img-fluid rounded-circle w-50"
+            id="pick-image"
+          />
+        </div>
+        <article
+          class="col-12 col-lg-4 d-flex flex-column align-items-start justify-content-between text-secondary mb-4 mb-lg-0"
+        >
+          <p class="m-0 p-0">
+            Nací en 1986, en la ciudad de
+            <strong>Buenos Aires, Argentina,</strong> donde resido actualmente
+          </p>
+          <p class="m-0 p-0">
+            La vida en esta <strong>vibrante ciudad</strong> ha influido en
+            <strong
+              >mi forma de percibir el mundo y la realidad que me rodea,</strong
+            >
+            formando y definiendo mi impronta.
+          </p>
+          <p class="m-0 p-0">
+            Si estás pensando en algún proyecto y
+            <strong>te gustaría mi colaboración,</strong> contactame sin
+            dudarlo.
+            <strong class="bio__span">De Buenos Aires al mundo!</strong>
+          </p>
+        </article>
+        <div
+          class="col-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-start justify-content-between px-lg-4"
+        >
+          <div class="d-flex flex-column align-items-start gap-2  index__top">
+            <ul class="d-flex flex-lg-column  m-0 p-0 nav-underline ">
+              <li class="m-0 p-0 nav-item">
+                <a href="#inicio" class="nav-link text-secondary  fs-5">
+                  Inicio
+                </a>
+              </li>
+              <li class="m-0 p-0 nav-item">
+                <a href="#proyectos" class="nav-link text-secondary  fs-5">
+                  Proyectos
+                </a>
+              </li>
+              <li class="m-0 p-0 nav-item">
+                <a
+                  href="mailto:marcelomelogno1986@gmail.com"
+                  class="nav-link text-secondary  fs-5"
+                >
+                  Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex gap-2 index__top">
+            <a
+              href="https://www.linkedin.com/in/marcelomelogno/"
+              target="_blank"
+              rel="external"
+              referrerpolicy="no-referrer"
+              ><i class="bi bi-linkedin text-secondary fs-4 shinny"></i
+            ></a>
+            <a
+              href="https://github.com/MarceM1"
+              target="_blank"
+              rel="external"
+              referrerpolicy="no-referrer"
+              ><i class="bi bi-github text-secondary fs-4 shinny"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5491135751731&text=Hola%2C%20estoy%20interesad@%20en%20tus%20servicios."
+              target="_blank"
+              rel="external"
+              referrerpolicy="no-referrer"
+              ><i class="bi bi-whatsapp text-secondary fs-4 shinny"></i
+            ></a>
+            <a
+              href="mailto:marcelomelogno1986@gmail.com?subject=Consulta%20de%20servicios"
+              target="_blank"
+              rel="external"
+              referrerpolicy="no-referrer"
+              ><i class="bi bi-envelope-at-fill text-secondary fs-4 shinny"></i
+            ></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Copyrigth -->
+      <article class="row d-flex align-items-center pb-2 index__top">
         <div
           class="col-12 d-flex align-items-center justify-content-center index__top"
         >
@@ -1027,10 +1138,11 @@
             target="_blank"
             referrerpolicy="no-referrer"
             id="footer__link"
+            class="text-center"
           >
             <small
               >&copy;<strong>Marcelo Melogno.</strong> Diseño y Desarrollo Web |
-              <span class="bio__span">Buenos Aires, Argentina. </span>
+              <span class="bio__span stretch">Buenos Aires, Argentina. </span>
               2024</small
             >
           </a>
