@@ -627,7 +627,7 @@ width: fit-content;
 .button__container{
 position: relative;
 width: 120px;
-height: 40px;
+height: 36px;
 /* border: solid 1px red; */
 /* padding: 0 12px; */
 
@@ -640,7 +640,7 @@ cursor: pointer;
   transform: translate(-50%,-50%);
 
   width: 120px;
-  height: 40px;
+  height: 36px;
   border: solid 1px var(--main-color-medium);
   border-radius: 50vw;
   transition: all .5s ease-in-out;
@@ -684,10 +684,14 @@ cursor: pointer;
 .button__container:hover .button__border>i{
   display: block;
   color: white;
-  text-shadow: 0 0 3px white;
+  text-shadow: 0 0 3px #7166d0;
 }
 
 #pick-image{
   filter: grayscale(1);
+}
+
+.icon_violet{
+  color: #7166d0 !important;
 }
 
